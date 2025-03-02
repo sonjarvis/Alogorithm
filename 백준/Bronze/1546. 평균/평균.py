@@ -1,14 +1,7 @@
-a = int(input())
-b = list(map(int, input().split()))
-c=0
-new_point=[]
+n = input()
+myList = list(map(int, input().split()))
 
-for i in b:
-    c += i
-    
-avg_old = c/a
+myMax = max(myList)
+sum = sum(myList)
 
-for i in b:
-    new_point.append(i/max(b) * 100)
-
-print("%0.2f" % (sum(new_point)/a))
+print(sum * 100 / myMax / int(n))
